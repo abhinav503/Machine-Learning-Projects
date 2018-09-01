@@ -4,7 +4,7 @@ import pandas as pd
 
 #importing the dataset
 dataset=pd.read_csv(r'C:\Users\USER\Desktop\all\train.csv')
-#dataset2=pd.read_csv(r'C:\Users\USER\Desktop\all\test.csv')
+
 
 #removing not needed
 RemoveList=['Id','MSSubClass','LotFrontage','Condition2','OverallCond','YearBuilt','MiscFeature','MoSold','SaleType',
@@ -13,11 +13,11 @@ RemoveList=['Id','MSSubClass','LotFrontage','Condition2','OverallCond','YearBuil
 
 for i in RemoveList:
     dataset = dataset.drop(i, 1)
-    #dataset2 = dataset2.drop(i, 1)
+    
 
 #filling the numerical columns / Can use Imputer as well
 dataset = dataset.fillna(method='ffill')
-#dataset2 = dataset2.fillna(method='ffill')
+
 #dropping the missing value rows for categorical variable
 #(can check by dataset.isna().any())
 dataset=dataset.dropna()
