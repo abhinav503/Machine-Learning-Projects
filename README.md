@@ -5,7 +5,10 @@
    
       b) Machine-Learning-Projects/concat2.py - Trained on train.csv and tested on test.csv.
       
-2.From Scratch : Linear Regression and Logistic Regression Algorithm from scratch using libraries like pandas, numpy, matplotlib in python following the Andrew N.G youtube classes.      
+2.From Scratch : Linear Regression and Logistic Regression Algorithm from scratch using libraries like pandas, numpy, matplotlib in python following the Andrew N.G youtube classes.
+
+3.Binary image classification : Using Convolutional Neural Network(in Python) to classify images of Dogs and Cats (8000 images).
+                                Library used is Keras Libray.
       
     
     
