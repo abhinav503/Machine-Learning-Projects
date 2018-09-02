@@ -63,9 +63,9 @@ def getmae(max_leaf_node,train_X,train_y,test_X,test_y):
 
 #compare mae with different values of max_leaf_node
 #best for 60
-for max_leaf_node in [20,40,60]:
-    mae=getmae(max_leaf_node,train_X,train_y,test_X,test_y)
-    print("Max Leaf Node : %d \t\t Mean Absolute Error : %d"%(max_leaf_node,mae)
+#for max_leaf_node in [20,40,60]:
+    #mae=getmae(max_leaf_node,train_X,train_y,test_X,test_y)
+    #print("Max Leaf Node : %d \t\t Mean Absolute Error : %d"%(max_leaf_node,mae)
 
 #getting unscaled value
 #sc_y.inverse_transform(y_pred)
